@@ -77,7 +77,7 @@
                     <input type="range" min="1100" max="40000" step="100" id="temp-max" value="40000">
                     <div class="range-track temp-track"></div>
                 </div>
-                <div class="range-readout"><span id="temp-min-val">1 100</span>–<span id="temp-max-val">40 000</span>
+                <div class="range-readout"><span id="temp-max-val">40 000</span>–<span id="temp-min-val">1 100</span>
                 </div>
             </label>
 
@@ -132,6 +132,15 @@
                 <button type="button" data-spectral="L">L</button>
                 <button type="button" data-spectral="D">D</button>
             </div>
+        </section>
+
+        <section class="constellations">
+            <div class="constellation-header">
+                <p class="section-label">Constellations</p>
+                <button type="button" id="clear-constellations" class="ghost small">Clear</button>
+            </div>
+            <input type="search" id="constellation-search" placeholder="Search..." aria-label="Search constellations">
+            <div id="constellation-list" class="constellation-list" aria-label="Constellation filters"></div>
         </section>
 
         <section class="toggles">
